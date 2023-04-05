@@ -1,0 +1,28 @@
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0.4);
+  border: 1px solid rgba(var(--card-border-rgb), 1);
+}
+
+.card p {
+  display: flex;
+  align-items: center;
+}
+
+.card p ~ p {
+  padding-top: 1em;
+}
+
+.card p svg {
+  padding-inline-end: 0.3em;
+}
+
+.token {
+  margin-inline-start: 0.5em;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
