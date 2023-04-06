@@ -7,7 +7,13 @@ import styles from './Authorization.module.css';
 const inter = Inter({ subsets: ['latin'] });
 
 async function fetchKey(iss: string, kid: string) {
-  const res = await fetch(`${iss}/cdn-cgi/access/certs`);
+  const url = new URL(`${iss}/cdn-cgi/access/certs`);
+
+  if (!url.host.endsWith('.cloudflareaccess.com')) {
+    throw new Error('invalid issuer');
+  }
+
+  const res = await fetch(url);
   
   if (!res.ok) {
     throw new Error('failed to fetch certs');
