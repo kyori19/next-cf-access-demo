@@ -1,6 +1,6 @@
+import { useAccess } from 'next-cf-access';
+import { Redirect } from 'next-cf-access/components';
 import './globals.css';
-import Redirect from './Redirect';
-import useAccess from './useAccess';
 
 export const metadata = {
   title: 'Next.js & Cloudflare Access Demo',

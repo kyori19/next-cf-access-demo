@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
+import { useAccess } from 'next-cf-access';
 import { FaCheck, FaExclamation, FaTimes } from 'react-icons/fa';
-import useAccess from './useAccess';
 import CopyableValue from './CopiableValue';
 import styles from './Authorization.module.css';
 
