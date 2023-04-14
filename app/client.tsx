@@ -1,2 +1,2 @@
 'use client';
-export * from 'next-cf-access/components';
+export { Redirect } from 'next-cf-access/components';
