@@ -1,5 +1,5 @@
 import { useAccess } from 'next-cf-access';
-import { Redirect } from 'next-cf-access/components';
+import { Redirect } from './client';
 import './globals.css';
 
 export const metadata = {
